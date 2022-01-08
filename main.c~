@@ -1,0 +1,15 @@
+#include "main.h"
+
+int main(){
+	niveau_t* niveau=lecture_du_niveau(0);
+	affichage_niveau(niveau);
+	while(1){
+		deplacement (niveau,entree_du_joueur());
+		// system("clear");
+		affichage_niveau(niveau);
+	}
+	
+	liberation_du_niveau(niveau);
+
+	return 0;
+}
